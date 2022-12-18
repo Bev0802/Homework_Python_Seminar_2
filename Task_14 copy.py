@@ -9,7 +9,9 @@
 #Функция, принимает вещественное число(в формет строки) любой длинны как до запятой так и после 
 # и считает сумму цифр в этом числе.
 def SumDigitsRealNumberStr(a):                              
-        s=0                                              #Переменная для хранения и вывода суммы цифр
+        s=0
+        a = a.replace(".", ",")
+        a = a.replace("-", "")                                             #Переменная для хранения и вывода суммы цифр
         ch = a.find(",")
         if ch == -1:
                 a = int(a)
@@ -23,11 +25,11 @@ def SumDigitsRealNumberStr(a):
 
                 for i in range (0, len(list_str)-1):    #Преобразуем список в стоку с помощью цикла
                         for j in range (1, len(list_str)):
-                                list_str = list_str[i] + list_str[j]
-                               
+                                list_str = list_str[i] + list_str[j]  
+
                 for i in range (len(list_str)):       #Суммируем цифры в строке
-                        n = int(list_str[i])        
-                        s=s+n
+                    n = int(list_str[i])
+                    s=s+n
         return s
 
 
