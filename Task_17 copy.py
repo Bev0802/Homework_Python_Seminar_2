@@ -58,3 +58,37 @@ for i in range(0,len(lis)-1,2):
         productLists.append(p)    
        
 print(f"Произведение чисел списка [-n, n] по индексам взятым из файла: {productLists}")
+
+'''
+file = open("file.txt",r)
+mult = 1
+for i in file:
+    mult*=list_num[int(1)]
+
+print(mult)
+
+file = open("file.txt",r)
+mult = 1
+list_str = file(map(str.strip,list_str))
+print(list_num)
+
+# import random
+#
+# n = int(input())
+# list_num = [random.randint(-n,n) for i in range(n)]
+# print(list_num)
+
+# file = open("File.txt","r")
+# multi = 1
+# list_str = file.readlines()
+# print(list_str)
+# list_num = list(map(str.strip,list_str))
+# print(list_num)
+# list_num = list(map(int,list_num))
+# print(list_num)
+# for i in file:
+#     multi*=list_num[int(i)]
+# print(multi)
+
+
+'''
