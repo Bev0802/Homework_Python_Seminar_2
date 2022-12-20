@@ -52,6 +52,7 @@ for i in range(0,len(lis)-1,2):
         b = int(lis[j])
         j= j+2
         p = (l[a])*(l[b])
+        print(f"{l[a]}*{l[b]}={p}")
         productLists.append(p)    
        
 print(f"Произведение чисел списка [-n, n] по индексам взятым из файла: {productLists}")
