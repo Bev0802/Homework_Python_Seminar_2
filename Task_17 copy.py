@@ -23,11 +23,14 @@ f.close()
 
 #запись индексов списка произволь в file.txt по строчно.
 lens = int(len(l)/2)
+if (lens%2)!= 0:
+        lens=lens-1
+
 for i in range(lens):
     s = random.randrange(len(l))
     s = str(s) 
     with open ("file.txt","a+") as f:
-       f.write(f'{s}\n')
+        f.write(f'{s}\n')
        
 
 #чтение данных из file.txt и запись в список
