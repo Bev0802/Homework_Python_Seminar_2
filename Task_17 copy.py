@@ -43,14 +43,17 @@ print(f"Список индексов прочитанный из файла fil
 #Произведение списка l созданного послеввода, по индексам взятыми из файла.
 productLists = []
 p=0
-for i in range(0,len(lis)-1,2):
-    for j in range(1,len(lis),2):
-        a = int(lis[i])
-        b = int(lis[j])
-        p = (l[a])*(l[b])
-        productLists.append(p)    
+for i in range(0,len(lis)-1):
+    if i < len(lis)-1:
+        for j in range(1,len(lis),2):
+            a = int(lis[i])
+            b = int(lis[j])
+            p = (l[a])*(l[b])
+            productLists.append(p)    
+            i=i+2
+    else: print(f"Произведение списков из файла из созданного по введенному числу n: {productLists}")
 
       
 
-print(f"Произведение списков из файла из созданного по введенному числу n: {productLists}")
+
 
