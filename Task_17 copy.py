@@ -25,6 +25,8 @@ f.close()
 lens = int(len(l)/2)
 if (lens%2)!= 0:
         lens=lens-1
+        if lens<=0:
+            lens=2
 
 for i in range(lens):
     s = random.randrange(len(l))
