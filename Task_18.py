@@ -7,7 +7,7 @@ print(list)
 random.shuffle(list)
 print(list)
 
-
+quit()
 def random_int(num):
     rand = datetime.datetime.now().microsecond/10**6
     return int(num*rand)
