@@ -21,7 +21,7 @@ f = open('file.txt', 'w')
 f.write('')
 f.close()
 
-#запись списка в file.txt по строчно.
+#запись индексов списка произволь в file.txt по строчно.
 lens = int(len(l)/2)
 for i in range(lens):
     s = random.randrange(len(l))
@@ -51,9 +51,4 @@ for i in range(0,len(lis)-1,2):
         p = (l[a])*(l[b])
         productLists.append(p)    
        
-print(f"Произведение списков из файла из созданного по введенному числу n: {productLists}")
-
-      
-
-
-
+print(f"Произведение чисел списка [-n, n] по индексам взятым из файла: {productLists}")
