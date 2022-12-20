@@ -21,7 +21,7 @@ f = open('file.txt', 'w')
 f.write('')
 f.close()
 
-#запись индексов списка произволь в file.txt по строчно.
+#запись индексов списка произвольно в file.txt по строчно.
 lens = int(len(l)/2)
 if (lens%2)!= 0:
         lens=lens-1
